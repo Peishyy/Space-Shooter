@@ -1,6 +1,4 @@
 
-```markdown
-
 # Space Shooter Game
 
 
