@@ -211,10 +211,11 @@ In this section, we'll guide you through the process of adding lives to the game
 
 ## Getting Started
 ### Prerequisites
-- [List any prerequisites or dependencies here]
+- Python 3.11
+- Pip
 
 ### Installation
-1. Clone the repository: git clone https://github.com/yourusername/space-shooter.git
+1. Clone the repository: git clone https://github.com/George-Stephen/space-shooter.git
 2. Navigate to the project directory: cd space-shooter
 3. Double click on the space shooter script file
 
@@ -236,21 +237,20 @@ In this section, we'll guide you through the process of adding lives to the game
 
 
 ## Game Architecture
-- Explain the overall architecture of your game, including key components and their interactions.
+- The game is made up of enemy spaceships and fighter spaceships.
+- The fighter spaceships shoots lasers to kill the enemy spaceships in order to advance in the vaious levels in the game.
+- The fighter spaceships are able to collect lives along the way in order to stay alive in the game.
 
 ## Assets
 - List and credit any external assets used in the game (e.g., images, sounds, etc.).
 
 ## Contributing
-If you'd like to contribute to the project, please follow the [contribution guidelines](CONTRIBUTING.md).
+If you'd like to contribute to the project and make it better, your help is very welcome.
 
 ## License
 This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 - [List any acknowledgments or credits]
-
-## Contact
-- [Provide your contact information for inquiries or collaboration]
 
 Happy gaming!
