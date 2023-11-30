@@ -2,22 +2,6 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-
-    - [Installation](#installation)
-
-    - [How to Play](#how-to-play)
-
-- [Controls](#controls)
-- [Game Architecture](#game-architecture)
-- [Assets](#assets)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
-- [Contact](#contact)
 
 ## Introduction
 Embark on an exhilarating journey through the cosmos in Space shooter, a captivating space shooter game developed using the Python programming language and the Pygame library. Defend the galaxy from relentless enemy forces, upgrade your spaceship, and claim your place among the stars as the most skilled cosmic pilot.
