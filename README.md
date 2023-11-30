@@ -15,10 +15,11 @@ In this section, we'll guide you through the process of adding lives to the game
 
 ## Getting Started
 ### Prerequisites
-- [List any prerequisites or dependencies here]
+- Python 3.11
+- Pip
 
 ### Installation
-1. Clone the repository: git clone https://github.com/yourusername/space-shooter.git
+1. Clone the repository: git clone https://github.com/George-Stephen/space-shooter.git
 2. Navigate to the project directory: cd space-shooter
 3. Double click on the space shooter script file
 
