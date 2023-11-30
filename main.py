@@ -5,9 +5,6 @@ import random
 import sys
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-import sys
-
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 pygame.font.init()
 pygame.mixer.init()
@@ -35,7 +32,6 @@ YELLOW_LASER = pygame.image.load(os.path.join("assets", "pixel_laser_yellow.png"
 POWER_UP_IMG = pygame.image.load(os.path.join("assets", "power_up.png"))
 
 BG = pygame.transform.scale(pygame.image.load(os.path.join("assets", "background-black.jpg")), (WIDTH, HEIGHT))
-
 
 
 
@@ -194,7 +190,6 @@ def main():
     main_font = pygame.font.SysFont("sans serif", 20)
     lost_font = pygame.font.SysFont("sans serif", 70)
     score_font = pygame.font.SysFont("sans serif", 50)
-    score_font = pygame.font.SysFont("sans serif", 50)
     player_vel = 5
     enemies = []
     enemy_vel = 1
@@ -215,7 +210,6 @@ def main():
         # lives_label = main_font.render(f"Lives: {lives}", 1, (255, 255, 255))
         level_label = main_font.render(f"Level: {level}", 1, (255, 255, 255))
         score_label = main_font.render(f"score: {player.score}", 1, (255, 255, 255))
-        score_label = main_font.render(f"score: {player.score}", 1, (255, 255, 255))
 
         # WIN.blit(lives_label, (10, 10))
         WIN.blit(level_label, (WIDTH - level_label.get_width() - 10, 10))
@@ -231,7 +225,6 @@ def main():
 
         if lost:
             lost_label = lost_font.render("GAME OVER!!!", 1, (255, 255, 255))
-            final_score = score_font.render(f"Your final score: {player.score}", 1, (255, 255, 255))
             final_score = score_font.render(f"Your final score: {player.score}", 1, (255, 255, 255))
             WIN.blit(lost_label, (WIDTH / 2 - lost_label.get_width() / 2, 350))
             WIN.blit(final_score,(WIDTH / 2 - lost_label.get_width() / 2, 450))
@@ -311,14 +304,13 @@ def main():
 
 def main_menu():
     title_font = pygame.font.SysFont("sans serif", 50)
-    run = True
-    while run:
+    sound_font = pygame.font.SysFont("sans serif", 30)
+    running = True
+    music_playing = True
+    TOGGLE_MUSIC_EVENT = pygame.USEREVENT + 1
+
+    while running:
         WIN.blit(BG, (0, 0))
-        title_label = title_font.render("Press the ENTER button to start :", 1, (255, 255, 255))
-        sound_label = sound_font.render("Press the M button to turn on or off the sound", 1, (255, 255, 255))
-        menu_text = "Music: ON" if music_playing else "Music: OFF"
-        menu_label = sound_font.render(menu_text, 1, (255, 255, 255))
-        WIN.blit(menu_label, (WIDTH - menu_label.get_width() - 10, 10))
         title_label = title_font.render("Press the ENTER button to start :", 1, (255, 255, 255))
         sound_label = sound_font.render("Press the M button to turn on or off the sound", 1, (255, 255, 255))
         menu_text = "Music: ON" if music_playing else "Music: OFF"
@@ -352,9 +344,6 @@ def main_menu():
                               
             
     pygame.quit()
-
-if __name__ == "__main__":
-    main_menu()
 
 if __name__ == "__main__":
     main_menu()
