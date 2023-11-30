@@ -63,7 +63,11 @@ In this section, we'll guide you through the process of adding lives to the game
 - The game is designed using a modular approach, with separate modules for player controls, enemy management, collision detection, power-ups, scoring, and graphics. This modular design allows for easy extensibility and modification.
 
 ## Assets
-- List and credit any external assets used in the game (e.g., images, sounds, etc.).
+- Background image: [Source]
+- Spaceship image: [Source]
+- Enemy spaceship images: [Source]
+- Laser image: [Source]
+- Explosion sound: [Source]
 
 ## Contributing
 If you'd like to contribute to the project, please follow the [contribution guidelines](CONTRIBUTING.md).
